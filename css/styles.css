@@ -253,8 +253,11 @@ img {
 .section__team-img {
   width: 270px;
 }
+.section__team-block {
+  padding: 30px 0;
+}
 .section__team-name {
-  padding: 30px 0 10px 0;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -263,8 +266,6 @@ img {
   color: var(--primary-color-text);
 }
 .section__team-position {
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
