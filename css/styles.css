@@ -39,15 +39,21 @@ img {
 .section {
   padding: 94px 0;
 }
-.hiden {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 /*--------head---------*/
 .header {
+  border-bottom: 1px solid #ececec;
+}
+.head {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 .conteiner {
   width: 1200px;
@@ -132,16 +138,12 @@ img {
 
 /*--------hero---------*/
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 200px 0;
 
   background-color: var(--color-bacground);
   text-align: center;
 }
 .section__titel-text {
-  display: inline-block;
   margin-bottom: 30px;
 
   font-weight: 700;
@@ -195,7 +197,7 @@ img {
 }
 /*-------------aboutus-----------*/
 .section__aboutus {
-  width: 100%;
+  padding-top: 0;
 }
 
 .section__aboutus-head {
@@ -217,7 +219,7 @@ img {
   margin-right: 30px;
 }
 /*--------team---------*/
-.team {
+.team-section {
   background: var(--partfolio-btn);
 }
 .team {
@@ -397,7 +399,7 @@ img {
 /*-----------cards-------------*/
 .portfolio__cards-list {
   display: flex;
-  align-items: center;
+
   flex-wrap: wrap;
 }
 .portfolio__list-item {
